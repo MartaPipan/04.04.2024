@@ -19,6 +19,12 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+    padding-left: calc(var(--padding-size));
+      padding-right: calc(var(--padding-size));
+}
+.row > * {
+  padding-left: var(--padding-size);
+  padding-right: var(--padding-size);
 }
 .col-1{
   --size: calc(100% / var(--col-amount) * 1); /*8.33%*/
